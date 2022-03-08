@@ -1,0 +1,110 @@
+db.users.insert([db.students{"first_name":"Shalabh","last_name":"Sharma","em
+ail":"dcac@gmail.com","gender":"Male","ip_address":"127.0.1.1","age":25})
+ show dbs
+
+use students
+
+db
+
+
+db.comments.insert(
+    {
+    'first_name':'Aarav',
+    'last_name':'saxena',
+    'email':'aarav@gmail.com',
+    'gender':'male',
+    'ip_address':1234568756,
+    'age':21
+    }
+)
+
+db.students.insertMany([
+    
+    {
+    'first_name':'Mohanty',
+    'last_name':'Dhavan',
+    'email':'mohantyn@gmail.com',
+    'gender':'male',
+    'ip_address':6/2,
+    'age':57
+    },
+    {
+    'first_name':'Rama',
+    'last_name':'Kumari',
+    'email':'rama@gmail.com',
+    'gender':'female',
+    'ip_address':street-123,
+    'age':25
+    },
+    {
+    'first_name':'Chand',
+    'last_name':'Kumar',
+    'email':'chand@gmail.com',
+    'gender':'male',
+    'ip_address':8/7,
+    'age':29
+    },
+    {
+    'first_name':'Sarita',
+    'last_name':'lande',
+    'email':'shta@gmail.com',
+    'gender':'female',
+    'ip_address':3/4,
+    'age':23
+    },
+    {
+    'first_name':'Fatima',
+    'last_name':'kumari',
+    'email':'fatima@gmail.com',
+    'gender':'female',
+    'ip_address':2/3,
+    'age':41
+    },
+    {
+    'first_name':'Shivdeep',
+    'last_name':'lande',
+    'email':'lande@gmail.com',
+    'gender':'male',
+    'ip_address':3/8,
+    'age':35
+    },
+    {
+    'first_name':'raman',
+    'last_name':'kumar',
+    'email':'rama@gmail.com',
+    'gender':'male',
+    'ip_address':7/8,
+    'age':24
+    },
+    {
+    'first_name':'madhu',
+    'last_name':'kumari',
+    'email':'madhu@gmail.com',
+    'gender':'female',
+    'ip_address':4/2,
+    'age':26
+    },
+    {
+    'first_name':'sonu',
+    'last_name':'raj',
+    'email':'sonu@gmail.com',
+    'gender':'male',
+    'ip_address':4/3,
+    'age':24
+    }
+
+])
+db.students.find({gender:'male'})
+
+db.students.update({first_name:'Aarav'},
+{
+    'first_name':'rohan',
+    'last_name':'kumar',
+    'email':'rohan@gmail.com',
+    'gender':'male',
+    'ip_address':5445454,
+    'age':18
+}
+)
+
+db.students.remove({first_name:'Sonu'})
